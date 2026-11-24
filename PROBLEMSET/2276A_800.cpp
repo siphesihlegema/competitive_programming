@@ -4,17 +4,15 @@
 using namespace std;
 
 int main() {
-  int t;
-  int a;
-  int b;
+  int t, a, b;
   cin >> t;
 
   while (t--) {
     cin >> a >> b;
     if (a <= b) {
       cout << (int)-1 << "\n";
+    } else {
+      cout << min(b, a - b) << "\n";
     }
-
-    cout << min(b, a - b) << "\n";
   }
 }
